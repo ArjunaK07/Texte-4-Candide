@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
     <style>
         body{
             background-color: #282828;
             display: block;
         }
 h1 {
-  color: rgb(255, 84, 84);
-  background-color: rgb(255, 206, 80);
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(255,  84,  84);
+  background-color: rgb(255,  206,  80);
+  font-family:Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif;
   text-align: center;
 }
 
 .navigation{
 border-radius: 5px; height: 50px;
 }
+
 .navigation_bar{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -28,28 +29,21 @@ border-radius: 5px; height: 50px;
 }
 
 .page{
-  background-color: rgb(57, 57, 57);
-  margin-left: 0px;
-  margin-right: 0px;
+  background-color: rgb(57,  57,  57);
+  margin-left: 250px;
+  margin-right: 250px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 10px;
 }
-@media screen and (min-width:750px) {
-            .page {
-               margin-left: 250px;
-               margin-right: 250px;
-               margin-top: 0px;
-               margin-bottom: 0px;
-            }
-        }
+
 .intro{
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif; 
 color: coral; 
 font-size: 25px;
 }
 p{
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Times New Roman',  Times,  serif;
     font-size: 30px;
 }
 img{
@@ -58,32 +52,25 @@ img{
 .img2{
     height: 300px;
 }
-.div1{
-grid-column: 1;
-grid-row: 1;
-margin-left: 0px;
-margin-top: 10px;
-}
-.div2{
-width: 400px;
-padding-right: 20px;
-}
+
 .titre{
-  color: rgb(255, 133, 93);
-  background-color: rgb(2, 100, 186);
+  color: rgb(255,  133,  93);
+  background-color: rgb(2,  100,  186);
   padding: 5px;
   font-weight: bold;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Verdana,  Geneva,  Tahoma,  sans-serif;
 }
 .texte{
-  color:aliceblue
+  color:aliceblue;
+  font-family:'Times New Roman',  Times,  serif;
+  font-size: 25px;
 }
 .légende{
   color: bisque;
   font-weight: bold;
 }
 .outro{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif; 
   font-size: 25px;
   color: crimson;
 }
@@ -93,15 +80,13 @@ padding-right: 20px;
   color: aqua; 
   background-color: coral; 
   font-weight: bold; 
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS',  'Lucida Sans Unicode',  'Lucida Grande',  'Lucida Sans',  Arial,  sans-serif;
 }
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
-  text-align: center;
-  height: 30px; 
-  font-family:'Times New Roman', Times, serif;
+  text-align: justify;
+  font-family:'Times New Roman',  Times,  serif;
   font-size: 25px;
   border: none;
   border-radius: 5px;
@@ -109,50 +94,49 @@ padding-right: 20px;
   background-color: whitesmoke;
   color: brown;
   font-weight: bold;
+  margin: 3px;
+  padding: 3px;
+
 }
 
 .tooltip .tooltiptext {
-  vertical-align: center;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-auto-rows: minmax(100px, auto);
   visibility: hidden;
-  width: 750px;
-  background-color: #555;
+  background-color: rgb(80, 80, 80);
   color: #fff;
-  text-align: center;
+  text-align: left;
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -410px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext2 {
-  vertical-align: center;
+  padding: 15px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-auto-rows: minmax(100px, auto);
-  visibility: hidden;
-  width: 750px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  grid-template-rows: 150px auto;
+  row-gap: 20px;
+  min-width: 500px;
+  max-width: 550px;
   left: 50%;
-  margin-left: -410px;
-  opacity: 0;
-  transition: opacity 0.3s;
+	transform: translateX(-25%);
+  justify-content: center;
 }
 
+.div1{
+width: auto;
+height: auto;
+position: static;
+padding: 5px;
+}
+img {
+  height: 150px;
+  width: auto;
+}
+.div2{
+min-width: 500px;
+max-width: 550px;
+height: auto;
+position: static;
+margin-top: 10px ;
+
+}
 .tooltip .tooltiptext::after {
   position: absolute;
   top: 100%;
@@ -161,11 +145,13 @@ padding-right: 20px;
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
+  opacity: 0.4;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+
 }
 .logo_akatsuki{
   height: 50px;
@@ -173,7 +159,7 @@ padding-right: 20px;
 }
 .OUTRO
 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif;
     font-size: 20px;
     color: aliceblue;
 }
@@ -182,267 +168,312 @@ padding-right: 20px;
   grid-template-columns: 3em 9fr ;
   grid-gap: 10px;
 }
-.div2{
+
+.outro_div{
   display: inline-block;
-  padding-top: 20px;
+  padding-top: 5px;
   width: 100%;
 }
 
+@media screen and (max-width:750px) {
+            .page {
+               margin-left: 0px;
+               margin-right: 0px;
+               margin-top: 0px;
+               margin-bottom: 0px;
+            }
+            .tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: rgb(80, 80, 80);
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: 150px auto;
+  row-gap: 20px;
+  max-width: 250px;
+  left: 50%;
+	transform: translateX(-25%);
+}
 
-</style>
+.div1{
+width: 300px;
+max-height: 300px;
+position: static;
+padding: 5px;
+}
+img{
+  max-width: 250px;
+  max-height: 150px;
+}
+.div2{
+max-width: 250px;
+height: auto;
+position: static;
+margin-top: 10px ;
+background-color: aquamarine;
 
-<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/logo%20akatsuki.png"/>
+}
+}
+    </style>
 
-<title> Texte 16 : Malade </title>
+    <title>Texte 4 : Candide </title>
 
-<h1> TEXTE 16 : MALADE IMAGINAIRE ACTE III </h1>
+    <h1> TEXTE 4 : CANDIDE </h1>
 </head>
 <body>
 
-<div class="page">
+    <div class="page">
 
-    <p class="titre" > 
-    
-      Séquence 7 Séance 5 : Troisième  lecture linéaire du Malade Imaginaire (Acte III Scène 5 ; l. 1- 38) 
+        <p class="titre" > 
         
-    </p>
+          Séquence 2 Séance 6 : Lecture linéaire d’un extrait de Candide            
+        
+        </p>
 
-       
-       <div class="navigation_bar">
+           
+           <div class="navigation_bar">
 
-        <div>
-        <a href="https://arjunak07.github.io/Texte-15-Caligula/">
-          <img class="navigation" src="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/revenir.png">
-        </a>
-       </div>
+            <div>
+            <a href="https://arjunak07.github.io/Texte-3-L-eduaction-humaniste/">
+              <img class="navigation" src="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/revenir.png">
+            </a>
+           </div>
 
-       <div>
-        <a href="https://arjunak07.github.io/Reccueil-des-textes/">
-          <img class="navigation" src="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/menu%20logo.png">
-        </a>
-       </div>
+           <div>
+            <a href="https://arjunak07.github.io/Reccueil-des-textes/">
+              <img class="navigation" src="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/menu%20logo.png">
+            </a>
+           </div>
 
-       </div>     
-       
+           <div>
+            <a href="https://arjunak07.github.io/Texte-5-Manon-Lescaut-Eglise/">
+              <img class="navigation" src="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/prochain.png">
+            </a>
+           </div>
 
-       </br>
 
-        <img src="https://raw.githubusercontent.com/ArjunaK07/Texte-13-Malade-Acte-1/main/Moliere_2.jpg">
-          <p class="intro">
-          JEAN BAPTISTE POQUELIN : -   </br>
-                     -  </br>
-                     -   
-                    </br> </br>
-          LE MALADE IMAGINAIRE : -   </br>
-                    -   </br>
-                    -  </br>
-                    - 
-                   </br> </br>
-          PASSAGE : -  
-  
-                    </br> </br>
-                      <span class="outro">
-                      LECTURE
-                      </span>
-                    </br> </br>
-                    
-  
-          PB : ON PEUT ALORS SE DEMANDER COMMENT DANS CE TEXTE   ?
+           </div>     
+           
 
-        </br></br>
+           </br>
 
-          Plan : I/ (l. - )   </br>
-                 II/ (l. - )  </br>
-                 III/ (l. - )   </br>
-      </p>
+            <img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/voltaire.jpeg">
+              <p class="intro">
+              VOLTAIRE : - Auteur et philosophe des lumières du XVIIIème siècle </br>
+                         - Critique du fanatisme religieux de son époque </br>
+                         - Ses oeuvres ont été censurés par le dogme </br> </br>
+              CANDIDE : - Conte philosophique écrit en 1789 </br>
+                        - Le héros éponyme chassé par sa maison d'accueil, gagne en expérience et lucidité par ses aventures et voyages </br>
+                        - Ce récit permet à l'auteur d'échapper à la censure et de s'exprimer librement </br> </br>
+              PASSAGE : - Dans le chapitre 3, Candide assiste au spectacle de la guerre. Pour Candide, celui-ci est d'abord magnifique, ses sens (en particulier l'ouïe et la vue) sont en éveil. Voltaire utilise ce tableau faussement élogieux du conflit pour dénoncer de façon ironique les atrocités des guerres qui font rage à son époque.
+              Il fait évoluer son personnage au gré de cette aventure.
+      
+                          </br> </br>
+                          <span class="outro">
+
+                          LECTURE
+
+                          </span>
+
+                        </br> </br>
+      
+              PB : ON PEUT ALORS SE DEMANDER COMMENT DANS CE TEXTE VOLTAIRE CONDAMNE LES HORREURS DE LA GUERRE IRONIQUEMENT ? </br> </br>
+      
+              Plan : I/ (l.1-9) Un spectacle grandiose </br>
+                     II/ (l.10-19) La découverte des atrocités de la guerre </br>
+                     III/ (1.20-24) La fuite finale de Candide </br>
+          </p>
 
  <div class="texte">
+    
+<div class="tooltip" style="background-color: aquamarine; color: rgb(172, 103, 0);"> Rien n’était si beau, si leste, si brillant, si bien ordonné que les deux armées. <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/troupe%20miitaire.jpg"></div><div class="div2"> Enumération d'adjectifs mélioratifs accentuée par l'adverbe « si » et son anaphore = regard plein d'admiration, beauté de la guerre. </div></span></div>
 
-<button class="tooltip" style="background-color:aqua; color:indianred;">   <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2">  </div></span></button> 
+Les
+
+<div class="tooltip" style="background-color: aquamarine; color: rgb(172, 103, 0);"> trompettes, les fifres, les hautbois, les tambours, les canons, <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/harmonie.jpeg"></div><div class="div2"> Enumération désordonnée d'instruments de musique donnant une impression de cacophonie mais concourant à une « harmonie ». La guerre est aussi un concert mais la contradiction accentue le ton ironique et paradoxal de cet éloge. </div></span></div>
+
+formaient
+
+<div class="tooltip" style="background-color: aquamarine; color: rgb(172, 103, 0);"> une harmonie <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/harmonie.jpeg"></div><div class="div2"> Enumération désordonnée d'instruments de musique donnant une impression de cacophonie mais concourant à une « harmonie ». </div></span></div>
+
+telle qu’il n’y en eut jamais en 
+
+<div class="tooltip" style="background-color: aquamarine; color: rgb(172, 103, 0);"> enfer. <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/halo%20effect.jpeg"></div><div class="div2"> La référence religieuse à « l'enfer » peut aussi sembler étrange et ironique car elle repose sur un stéréotype selon lequel la beauté artistique serait associée à une bonté morale. Ce cliché est ici implicitement condamné. </div></span></div>
+
+<div class="tooltip"> Les canons renversèrent <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/personification.jpg"></div><div class="div2"> Personnification des armes qui nent le sujet de verbes d'action. Elles sont associées à la mort.</div></span></div>
+
+d’abord à peu près
+
+<div class="tooltip" style="background-color: rgb(255, 127, 195); color: rgb(255, 198, 112);"> six mille hommes de chaque côté <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/guerre%20en%20chiffre.jpg"></div><div class="div2"> Aspect comptable la guerre. Candide est un spectateur émerveillé de la guerre. Pourtant les victimes sont nombreuses et comme désincarnées. Les armes ont pris le pouvoir sur les hommes. </div></span></div>
+
+ensuite la mousqueterie ôta du 
+
+<div class="tooltip" style="background-color: rgb(195, 127, 255); color: rgb(172, 103, 0);"> meilleur des mondes <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/meilleur%20des%20mondes.jpg"></div><div class="div2"> L'antithèse ironique entre « meilleur des mondes » et « infectaient la surface » met à jour l'absurdité de cette vision naive et optimiste de la guerre. </div></span></div>
 
 
+environ
 
+<div class="tooltip" style="background-color: rgb(255, 127, 195); color: rgb(255, 198, 112);"> neuf à dix mille coquins <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/guerre%20en%20chiffre.jpg"></div><div class="div2"> Aspect comptable la guerre. Candide est un spectateur émerveillé de la guerre. Pourtant les victimes sont nombreuses et comme désincarnées. Les armes ont pris le pouvoir sur les hommes. </div></span></div>
 
+qui en 
+
+<div class="tooltip" style="background-color: rgb(195, 127, 255); color: rgb(172, 103, 0);"> infectaient la surface. <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/nous%20sommes%20en%20guerre.jpeg"></div><div class="div2"> L'antithèse ironique entre « meilleur des mondes » et « infectaient la surface » met à jour l'absurdité de cette vision naive et optimiste de la guerre. </div></span></div>
+
+La baïonnette fut aussi la raison suffisante de la mort de 
+
+<div class="tooltip" style="background-color: rgb(255, 127, 195); color: rgb(255, 198, 112);"> quelques milliers d’hommes. <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/guerre%20en%20chiffre.jpg"></div><div class="div2"> Aspect comptable la guerre. Candide est un spectateur émerveillé de la guerre. Pourtant les victimes sont nombreuses et comme désincarnées. Les armes ont pris le pouvoir sur les hommes. </div></span></div>
+
+Le tout pouvait bien se monter à
+
+<div class="tooltip" style="background-color: rgb(255, 127, 195); color: rgb(255, 198, 112);"> une trentaine de mille âmes.  <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/guerre%20en%20chiffre.jpg"></div><div class="div2"> Aspect comptable la guerre. Candide est un spectateur émerveillé de la guerre. Pourtant les victimes sont nombreuses et comme désincarnées. Les armes ont pris le pouvoir sur les hommes. </div></span></div>
+
+<div class="tooltip" style="background-color: aquamarine; color: rgb(172, 103, 0);"> Candide, qui tremblait comme un philosophe, se cacha du mieux qu’il put <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/voltaire.png"></div><div class="div2"> Comparaison ironique. Candide est un spectateur lâche de la guerre. Voltaire se moque aussi de lui-même et des philosophes. Autodérision. </div></span></div>
+
+pendant cette 
+
+<div class="tooltip" style="background-color:whitesmoke; color:crimson;"> boucherie héroïque. <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/vision%20de%20la%20guerre.jpg"></div><div class="div2"> Oxymore ironique qui oppose barbarie et héroïsme. Tout le texte peut être lu à travers ce paradoxe qui oblige le lecteur à revoir son point de vue sur la guerre. </div></span></div> 
 
 </br></br>
 
-<span class="transition"> Bilan du premier mouvement : 
-</span>
+<span class="transition"> Transition : La scène est perçue du point de vue de Candide. Il admire la grandeur de la guerre et sa morale ... mais seulement de loin ! Son apprentissage fait d'admiration et de peur est paradoxal. Le lecteur perçoit déjà l'ironie cruelle de cet épisode. </span>
 
 </br></br>
 
+Enfin, tandis que
+
+<div class="tooltip" style="background-color:whitesmoke; color:crimson;"> les deux rois faisaient chanter des Te Deum, chacun dans son camp, <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/te%20deum.jpg"></div><div class="div2"> Critique du pouvoir royal et du pouvoir religieux : les rois ne participent que de loin à la guerre. L'un et l'autre remercient Dieu de la même facon pour les morts qu'ils ont provoqué. L'ironie est féroce. </div></span></div> 
+
+<div class="tooltip" style="background-color:whitesmoke; color:crimson;"> il prit le parti d’aller raisonner ailleurs des effets et des causes. <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/usopp%20running.gif"></div><div class="div2"> Euphémisme : le narrateur cache en partie la peur de Candide, il fait preuve d'ironie. Candide fuit le champ de bataille : cette fuite va lui permettre de découvrir l'absurdité de la guerre. </div></span></div> 
+
+Il passa par-dessus
+
+<div class="tooltip" style="background-color:whitesmoke; color:crimson;"> des tas <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/profusion.png"></div><div class="div2"> L'imprécision du nom « tas » suggère la profusion des corps. </div></span></div> 
+
+de morts et de mourants,
+
+<div class="tooltip" style="background-color:rgb(131, 5, 5); color:rgb(20, 193, 220);"> et gagna d’abord un village voisin ; il était en cendres : <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/destruction%20d'eren.jpg"></div><div class="div2"> La guerre est associée à un contexte réaliste : la destruction d'un village abare par les Bulgares. Le texte a bien une portée engagée. </div></span></div> 
+
+c’était un
+
+<div class="tooltip" style="background-color:rgb(131, 5, 5); color:rgb(20, 193, 220);"> village abare que les Bulgares avaient brûlé, <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/destruction%20d'eren.jpg"></div><div class="div2"> La guerre est associée à un contexte réaliste : la destruction d'un village abare par les Bulgares. Le texte a bien une portée engagée. </div></span></div> 
+
+selon les lois du
+
+<div class="tooltip" style="background-color:rgb(131, 5, 5); color:rgb(20, 193, 220);"> droit public. <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/la%20loi%20de%20guerre.jpeg"></div><div class="div2"> La référence au « droit public » est une satire acérée des sociétés qui justifient l'horreur en l'encadrant avec des lois. </div></span></div> 
+
+Ici
+
+<div class="tooltip" style="background-color:rgb(48, 0, 121); color:rgb(63, 181, 255);"> des vieillards <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/famille%20guerre.png"></div><div class="div2"> Le champ lexical de la famille cotôyant celui de l'horreur, l'immoralité et l'absurdité de la guerre sont encore dénoncées. </div></span></div>
+
+<div class="tooltip" style="background-color:rgb(255, 104, 104); color:rgb(0, 55, 89);"> criblés de coups <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/destruction.jpeg"></div><div class="div2"> Enumération pathétique et au pluriel des victimes de la bataille; vocabulaire tres réaliste. La violence absolue de la guerre aboutit à une dégradation générale du monde. </div></span></div>
+
+regardaient mourir
+
+<div class="tooltip" style="background-color:rgb(48, 0, 121); color:rgb(63, 181, 255);"> leurs femmes égorgées, <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/famile.jpg"></div><div class="div2"> Le champ lexical de la famille cotôyant celui de l'horreur, l'immoralité et l'absurdité de la guerre sont encore dénoncées. </div></span></div>
+
+qui tenaient
+
+<div class="tooltip" style="background-color:rgb(48, 0, 121); color:rgb(63, 181, 255);"> leurs enfants <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/famille.jpg"></div><div class="div2"> Le champ lexical de la famille cotôyant celui de l'horreur, l'immoralité et l'absurdité de la guerre sont encore dénoncées. </div></span></div>  
+
+à leurs
+
+<div class="tooltip" style="background-color:rgb(255, 104, 104); color:rgb(0, 55, 89);"> mamelles sanglantes ;<span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/destruction.jpeg"></div><div class="div2"> Enumération pathétique et au pluriel des victimes de la bataille; vocabulaire tres réaliste. La violence absolue de la guerre aboutit à une dégradation générale du monde. </div></span></div>  
+
+là des 
+
+<div class="tooltip" style="background-color:rgb(48, 0, 121); color:rgb(63, 181, 255);"> filles, <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/mikasa.png"></div><div class="div2"> Le champ lexical de la famille cotôyant celui de l'horreur, l'immoralité et l'absurdité de la guerre sont encore dénoncées. </div></span></div> 
+
+<div class="tooltip" style="background-color:rgb(255, 104, 104); color:rgb(0, 55, 89);"> éventrées <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/destruction.jpeg"></div><div class="div2"> Enumération pathétique et au pluriel des victimes de la bataille; vocabulaire tres réaliste. La violence absolue de la guerre aboutit à une dégradation générale du monde. </div></span></div> 
+
+après avoir
+
+<div class="tooltip" style="background-color:whitesmoke; color:crimson;"> assouvi les besoins naturels de quelques héros, rendaient les derniers soupirs ; <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/crauté.jpg"></div><div class="div2"> Antiphrase et litote ironiques dont le but est de désacraliser les « héros » animalisés. L'héroïsme guerrier n'est que barbarie : le modèle du héros épique est sapé par le narrateur. </div></span></div> 
+
+d’autres,
+
+<div class="tooltip" style="background-color:rgb(255, 104, 104); color:rgb(0, 55, 89);"> à demi brûlées, criaient qu’on achevât de leur donner la mort. <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/destruction.jpeg"></div><div class="div2"> Enumération pathétique et au pluriel des victimes de la bataille; vocabulaire tres réaliste. La violence absolue de la guerre aboutit à une dégradation générale du monde. </div></span></div> 
+
+<div class="tooltip" style="background-color:whitesmoke; color:crimson;"> Des cervelles étaient répandues sur la terre à côté de bras et de jambes coupés. <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/livail.jpg"></div><div class="div2"> Champ lexical des membres du corps. Candide ne perçoit plus des humains mais une humanité mise en morceaux. La guerre détruit l'humanité. </div></span></div>   
+
+</br></br>
+
+<span class="transition"> Transition : Dans ce deuxième paragraphe, on glisse d'une vision militaire et comptable de la querre à un point de vue plus humain et compatissant. Candide perd sa naïveté face à l'horreur des massacres. On observe également un renversement de valeurs, autrefois, les « héros » se battaient pour l'honneur. Ici, la violence l'emporte sur tout et menace l'existence du monde. </span>
+
+</br></br>
+
+Candide
+
+<div class="tooltip" style="background-color:rgb(74, 255, 116); color:rgb(149, 48, 1);"> s’enfuit au plus vite <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/usopp%20running.gif"></div><div class="div2"> Verbes d'action utilisés de façon ironique. Candide n'attaque pas, il recule ! Il n'est pas un héros épique. Sa fuite est cependant nécessaire pour sa survie. </div></span></div>  
+
+dans un autre village : il appartenait
+
+<div class="tooltip" style="background-color:rgb(0, 97, 98); color:rgb(255, 87, 121);"> à des Bulgares, et les héros abares <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/viking.jpeg"></div><div class="div2"> Sonorité proches qui rappelent le nom « barbares ». Le nom « héros » est une antiphrase. La barbarie et la bêtise s'observent bien à parts égales dans les deux camps. Candide comprend que la guerre est néfaste. </div></span></div>  
+
+l’avaient
+
+<div class="tooltip" style="background-color:rgb(0, 97, 98); color:rgb(255, 87, 121);"> traité de même. <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/viking.jpeg"></div><div class="div2"> Sonorité proches qui rappelent le nom « barbares ». Le nom « héros » est une antiphrase. La barbarie et la bêtise s'observent bien à parts égales dans les deux camps. Candide comprend que la guerre est néfaste. </div></span></div>  
+
+Candide, toujours
+
+<div class="tooltip" style="background-color:rgb(74, 255, 116); color:rgb(149, 48, 1);"> marchant <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/ussop.%20.jpg"></div><div class="div2"> Verbes d'action utilisés de façon ironique. Candide n'attaque pas, il recule ! Il n'est pas un héros épique. Sa fuite est cependant nécessaire pour sa survie. </div></span></div>
+
+sur des membres palpitants ou à travers des ruines, 
+
+<div class="tooltip" style="background-color:rgb(74, 255, 116); color:rgb(149, 48, 1);"> arriva enfin hors du théâtre de la guerre, <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/ussop.%20.jpg"></div><div class="div2"> Verbes d'action utilisés de façon ironique. Candide n'attaque pas, il recule ! Il n'est pas un héros épique. Sa fuite est cependant nécessaire pour sa survie. </div></span></div>  
+
+portant quelques petites provisions dans son bissac, et
+
+<div class="tooltip" style="background-color:whitesmoke; color:crimson;"> n’oubliant jamais Mlle Cunégonde. <span class="tooltiptext"> <div class="div1"><img src="https://raw.githubusercontent.com/ArjunaK07/Texte-4-Candide/main/El-Cid-poster-min.jpg"></div><div class="div2"> L'extrait se conclut étrangement avec une certaine légereté (amour de Candide.) Cette dernière ironie finit de décrédibiliser la guerre. Candide est capable de prendre du recul au sens propre et au sens figuré : la condamnation de la guerre est définitive. </div></span></div>   
+ 
+</br></br> 
 
 </div>
  
  <p class="légende">
-  Arthur RIMBAUD, Une Saison en enfer, « Alchimie du verbe », Délires II, 1873
+  Voltaire, Candide, chapitre 3, 1759   
 </p>
 
 <p class="intro">
   Conclusion : 
-  - </br>
-  -  </br>
-  -  </br>
-  -  </br>
-               
+               - Ce texte est bien une violente satire des horreurs de la guerre. </br>
+               - Si Candide commence par trouver le spectacle grandiose, l'omniprésence de l'ironie souligne les paradoxes des discours guerriers et oblige le lecteur à revoir son point de vue sur les conflits. </br>
+               - Candide va ainsi perdre sa naiveté en découvrant la dimension humaine et pathétique de la réalité de la guerre. </br>
+               - Sa seule solution pour prendre du recul face à cette violence absurde est alors de la fuir. 
+              </br> </br>
   Ouverture : 
-  -  </br>
-  - 
+  - Le recul du philosophe capable d'autodérision sur ses spéculations déconnectées de la réalité qu'il évoque est assez présent chez les Lumières. La légereté et le rire sont ainsi source de savoir, de lucidité et d'honnêteté. </br>
+  - Pensons à Diderot qui dans son Supplément au voyage de Bougainville fait tenir à un vieux tahitien un réquisitoire contre la colonisation. </br>
+  - Celui qui se retrouve porte-parole du philosophe et vit la colonisation apostrophe l'occidental en lui parlant de ses « inutiles lumières ». 
 </br> </br>
-
-  <p class="outro">
-  QUESTION GRAMMAIRE : </br>
- </br>
-- 
-</br>
--  </br>
--  </br>
-
 </p>
-    </p>
 
- <button class="tooltip" style="background-color: chartreuse; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:indianred;">
-    Procédés Littéraires et Stylistiques = 20
-</button>
+<p class="outro">
+    QUESTION GRAMMAIRE : </br>
+    Etudier la négation dans la première ligne de l'extrait. : « Rien n'était si beau, si leste, si brillant, si bien ordonné que le
+    armées. » (1.4)
+    </br> </br>
+    Négation grammaticale partielle identifiée par le pronom « R verbe « était ». </br>
+    Le pronom est implicitement répété trois fois position de sujet du l'énumération. </br>
+</p>
+
+
+ <div class="tooltip" style="background-color: chartreuse; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:indianred;">
+    Procédés Littéraires et Stylistiques = 2
+</div>
 
 </br></br>
 
     <p class="texte">
 
 TEXTE ORIGINAL: </br> </br>
-
-Scène 5 MONSIEUR PURGON, ARGAN, BÉRALDE, TOINETTE. 
- 
-</br></br>
-
-Monsieur Purgon. - Je viens d’apprendre là-bas, à la porte, de jolies nouvelles ; qu’on se moque ici de mes ordonnances, et qu’on a fait refus de prendre le remède que j’avais prescrit. 
- 
-</br></br>
-
-Argan. - Monsieur, ce n’est pas… 
- 
-</br></br>
-
-Monsieur Purgon. - Voilà une hardiesse bien grande, une étrange rébellion d’un malade contre son médecin ! 
- 
-</br></br>
-
-Toinette. - Cela est épouvantable. 
- 
-</br></br>
-
-Monsieur Purgon. - Un clystère que j’avais pris plaisir à composer moi-même. 
- 
-</br></br>
-
-Argan. - Ce n’est pas moi… 
- 
-</br></br>
-
-Monsieur Purgon. - Inventé et formé dans toutes les règles de l’art. 
- 
-</br></br>
-
-Toinette. - Il a tort. 
- 
-</br></br>
-
-Monsieur Purgon. - Et qui devait faire dans les entrailles un effet merveilleux. 
- 
-</br></br>
-
-Argan. - Mon frère… 
- 
-</br></br>
-
-Monsieur Purgon. - Le renvoyer avec mépris ! 
- 
-</br></br>
-
-Argan. - C’est lui… 
- 
-</br></br>
-
-Monsieur Purgon. - C’est une action exorbitante. 
- 
-</br></br>
-
-Toinette. - Cela est vrai. 
- 
-</br></br>
-
-Monsieur Purgon. - Un attentat énorme contre la médecine. 
- 
-</br></br>
-
-Argan. - Il est cause… 
- 
-</br></br>
-
-Monsieur Purgon. - Un crime de lèse-Faculté, qui ne se peut assez punir. 
- 
-</br></br>
-
-Toinette. - Vous avez raison. 
-
-</br></br>
-
-Monsieur Purgon. - Je vous déclare que je romps commerce avec vous. 
- 
-</br></br>
-
-Argan. - C’est mon frère… 
- 
-</br></br>
-
-Monsieur Purgon. - Que je ne veux plus d’alliance avec vous. 
- 
-</br></br>
-
-Toinette. - Vous ferez bien. 
- 
-</br></br>
-
-Monsieur Purgon. - Et que, pour finir toute liaison avec vous, voilà la donation que je faisais à mon neveu, en faveur du mariage. 
- 
-</br></br>
-
-Argan. - C’est mon frère qui a fait tout le mal. 
- 
-</br></br>
-
-Monsieur Purgon. - Mépriser mon clystère ! 
- 
-</br></br>
-
-Argan. - Faites-le venir ; je m’en vais le prendre. 
- 
-</br></br>
-
-Monsieur Purgon. - Je vous aurais tiré d'affaire avant qu’il fût peu. 
- 
-</br></br>
-
-Toinette. - Il ne le mérite pas. 
- 
-</br></br>
-
-Monsieur Purgon. - J’allais nettoyer votre corps, et en évacuer entièrement les mauvaises humeurs. 
- 
-</br></br>
-
-Argan. - Ah ! Mon frère ! 
- 
-</br></br>
-
-Monsieur Purgon. - Et je ne voulais plus qu’une douzaine de médecines pour vider le fond du sac. 
- 
-</br></br>
-
-Toinette. - Il est indigne de vos soins. 
-
-</br></br>
-
+Rien n’était si beau, si leste, si brillant, si bien ordonné que les deux armées. Les trompettes, les fifres, les hautbois, les tambours, les canons, formaient une harmonie telle qu’il n’y en eut jamais en enfer. Les canons renversèrent d’abord à peu près six mille hommes de chaque côté ; ensuite la mousqueterie ôta du meilleur des mondes environ neuf à dix mille coquins qui en infectaient la surface. La baïonnette fut aussi la raison suffisante de la mort de quelques milliers d’hommes. Le tout pouvait bien se monter à une trentaine de mille âmes. Candide, qui tremblait comme un philosophe, se cacha du mieux qu’il put pendant cette boucherie héroïque.  </br> </br>
+Enfin, tandis que les deux rois faisaient chanter des Te Deum, chacun dans son camp, il prit le parti d’aller raisonner ailleurs des effets et des causes. Il passa par-dessus des tas de morts et de mourants, et gagna d’abord un village voisin ; il était en cendres : c’était un village abare que les Bulgares avaient brûlé, selon les lois du droit public. Ici des vieillards criblés de coups regardaient mourir leurs femmes égorgées, qui tenaient leurs enfants à leurs mamelles sanglantes ; là des filles, éventrées après avoir assouvi les besoins naturels de quelques héros, rendaient les derniers soupirs ; d’autres, à demi brûlées, criaient qu’on achevât de leur donner la mort. Des cervelles étaient répandues sur la terre à côté de bras et de jambes coupés.  </br> </br>
+Candide s’enfuit au plus vite dans un autre village : il appartenait à des Bulgares, et les héros abares l’avaient traité de même. Candide, toujours marchant sur des membres palpitants ou à travers des ruines, arriva enfin hors du théâtre de la guerre, portant quelques petites provisions dans son bissac, et n’oubliant jamais Mlle Cunégonde.  
 
     </p>
 
@@ -451,14 +482,13 @@ Toinette. - Il est indigne de vos soins.
     <h6 style="color: indianred; display: block; ">
       ©©© • FAIT PAR ARJUNAA d'après les cours de Mr. Badelon • ©©©
     </h6>
-
     <div class="source">
 
-      <div class="div1">
+      <div class="intro_div">
         <a href="https://arjunak07.github.io/Accueil-Premiere/"> <img class="logo_akatsuki" src="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/logo%20akatsuki.png"> </a>
       </div>
     
-      <div class="div2">
+      <div class="outro_div">
         <span class="OUTRO">
           FAIT PAR L'AKATSUKI DES CODEURS, PROPULSÉ PAR LE LYCÉE ANDRÉ MALRAUX
         </span>
